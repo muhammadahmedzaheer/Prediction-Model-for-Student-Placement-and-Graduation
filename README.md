@@ -25,25 +25,30 @@ To set up the environment for running the notebooks, follow these steps:
    git clone <repository_url>
    cd <repository_directory>
 
-2. Install the dependencies:
+2. **Create a Virtual Environment**
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+3. **Install Dependencies**
    ```
    pip install -r requirements.txt
 
-## Dataset
-The dataset used in this project consists of patient data with various features related to Parkinson's disease. The dataset is split into training and validation sets.
-
 ## Usage
-1. Data Preparation:
-Ensure your dataset is structured correctly and loaded into the notebook.
+Data Preparation: Extract the contents of datasets.zip into a directory.
 
-2. Training the Model:
-Run the training and evaluation cells in the notebook to train the models and evaluate their performance.
+Run Notebooks: Extract the contents of notebooks.zip and open the Jupyter notebooks in your preferred environment (e.g., Jupyter Notebook or JupyterLab).
 
-3. Inference:
-Use the trained model to perform inference on new data by running the appropriate cells in the notebook.
+Model Execution:
+    The graduation_year.py script predicts the graduation year based on student details.
+    The placement_status.py script predicts whether a student will secure a placement.
 
-## Results
-The models achieve high accuracy and provide valuable insights into the progression of Parkinson's disease.
+Output: The predictions will be saved in the output.zip file. Extract this file to review the results.
+
+## File Description
+datasets.zip: Contains the CSV files 01 Train Data.csv, 02 Test Data.csv, and others for training and testing.
+notebooks.zip: Includes graduation_year.py and placement_status.py files with code for model training and prediction.
+output.zip: Contains placement_predictions.csv and predicted_graduation_year.csv files with the results from the models.
 
 ## Acknowledgements
-Special thanks to the UCI Machine Learning Repository for providing the dataset used in this project.
+Tools Used: Visual Studio Code, Jupyter Notebooks, Python libraries (e.g., Scikit-learn)
