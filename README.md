@@ -9,7 +9,7 @@ This project involves the development of predictive models for:
 ## Contents
 
 - **datasets.zip**: Contains CSV files used for training and testing the models.
-- **notebooks.zip**: Includes Jupyter notebooks with the code for both prediction and forecasting tasks.
+- **notebooks.ipynb**: Includes Jupyter notebook with the code for both prediction and forecasting tasks.
 - **output.zip**: Contains the CSV files with the model's predictions and forecasted graduation years.
 - **requirements.txt**: Lists the Python packages required to run the notebooks.
 - **LICENSE**: MIT License for this project.
@@ -40,14 +40,13 @@ Data Preparation: Extract the contents of datasets.zip into a directory.
 Run Notebooks: Extract the contents of notebooks.zip and open the Jupyter notebooks in your preferred environment (e.g., Jupyter Notebook or JupyterLab).
 
 Model Execution:
-    The graduation_year.py script predicts the graduation year based on student details.
-    The placement_status.py script predicts whether a student will secure a placement.
+    The notebook.ipynb script predicts the graduation year based on student details and whether a student will secure a placement.
 
 Output: The predictions will be saved in the output.zip file. Extract this file to review the results.
 
 ## File Description
 datasets.zip: Contains the CSV files 01 Train Data.csv, 02 Test Data.csv, and others for training and testing.
-notebooks.zip: Includes graduation_year.py and placement_status.py files with code for model training and prediction.
+notebook.ipynb: Includes graduation year and placement status code for model training and prediction.
 output.zip: Contains placement_predictions.csv and predicted_graduation_year.csv files with the results from the models.
 
 ## Acknowledgements
